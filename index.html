@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <div>
+                Player 1
+                <input required type="text" id="player-1" placeholder="Player 1 Name">
+            </div>
+            <div>
+                Player 2
+                <input required type="text" id="player-2" placeholder="Player 2 Name">
+            </div>
+            <div>
+                <input type="button" value="Start" class="btn btn-secondary" id="start-btn">
+            </div>
+            <div id="board-cont">
+                <div id="overlay-div"></div>
+                <div id="board">
+                    <div id="0" class="cell"></div>
+                    <div id="1" class="cell"></div>
+                    <div id="2" class="cell"></div>
+                    <div id="3" class="cell"></div>
+                    <div id="4" class="cell"></div>
+                    <div id="5" class="cell"></div>
+                    <div id="6" class="cell"></div>
+                    <div id="7" class="cell"></div>
+                    <div id="8" class="cell"></div>
+                </div>
+            </div>
+            <input type="button" class="btn btn-secondary" value="Reset" id="reset-btn">
+            <div id="result-div">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</body>
+
+</html>

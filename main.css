@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+}
+
+#board {
+    background: black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+    width: min-content;
+}
+
+#board-cont {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    position: relative;
+    width: min-content;
+}
+
+#overlay-div {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1.5rem;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cell {
+    height: 20vw;
+    max-height: 5rem;
+    width: 20vw;
+    max-width: 5rem;
+    background: white;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
